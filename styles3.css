@@ -1,14 +1,33 @@
 
 body{
-	background-color:#3ABEF9;
+	background-color:lightblue;
 }
 
 #map{
-	margin: auto;
-	width: 50%;
-	border: 3px solid black;
-	padding: 0px;
-	align : center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* width: auto; */
+	/* border: 3px solid black; */
+	/* padding: 0px; */
+	/* align-content: center; */
+}
+
+.element {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.navBtn {
+  /* background-color: #333; */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* padding: 14px 16px; */
+  padding-left: 14px;
+  padding-right: 16px;
+  /* border: 4px solid #333; */
 }
 
 .bbh-sans{
