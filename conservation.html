@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <!-- Page by Tristan  -->
 <html lang="en">
 
@@ -27,7 +27,7 @@
 			<script src="scripts/nav.js"></script>
 		</header>
     <!-- navbar will be inserted here from scripts/nav.js  -->
-		
+
 		
 		
     <!-- Main Content -->
@@ -47,15 +47,17 @@
 				<!-- SECTION 1 -->
 				<h2 class="bbh-sans">Introduction</h2>
 				<p class="roboto-slab">Lorem ipsum dolor sit amet consectetur adipiscing, elit dictumst orci class in nibh eu, donec praesent himenaeos bibendum ante. Potenti cras senectus urna felis primis ornare lacus vel, eleifend sed molestie parturient magnis nostra magna, suscipit penatibus aptent turpis aliquet mus at. Tellus nec scelerisque taciti ac sapien litora nisi, congue consequat est ridiculus eget venenatis a, iaculis viverra fames sem mauris elementum, egestas euismod lobortis quisque gravida hac. Semper cubilia odio massa neque faucibus arcu, tristique suspendisse fermentum integer.</p>
-
+				<hr class="hr hr-blurry" />
+				
 				<!-- SECTION 2 -->
 				<h2 class="bbh-sans mt-5">Understanding the Challenge</h2>
 				<p class="roboto-slab">Lorem ipsum dolor sit amet consectetur adipiscing, elit dictumst orci class in nibh eu, donec praesent himenaeos bibendum ante. Potenti cras senectus urna felis primis ornare lacus vel, eleifend sed molestie parturient magnis nostra magna, suscipit penatibus aptent turpis aliquet mus at. Tellus nec scelerisque taciti ac sapien litora nisi, congue consequat est ridiculus eget venenatis a, iaculis viverra fames sem mauris elementum, egestas euismod lobortis quisque gravida hac. Semper cubilia odio massa neque faucibus arcu, tristique suspendisse fermentum integer.</p>
-
+				<hr class="hr hr-blurry" /> 
+				
 				<!-- SECTION 3 -->
 				<h2 class="bbh-sans mt-5">Why Water Matters</h2>
 				<p class="roboto-slab">Lorem ipsum dolor sit amet consectetur adipiscing, elit dictumst orci class in nibh eu, donec praesent himenaeos bibendum ante. Potenti cras senectus urna felis primis ornare lacus vel, eleifend sed molestie parturient magnis nostra magna, suscipit penatibus aptent turpis aliquet mus at. Tellus nec scelerisque taciti ac sapien litora nisi, congue consequat est ridiculus eget venenatis a, iaculis viverra fames sem mauris elementum, egestas euismod lobortis quisque gravida hac. Semper cubilia odio massa neque faucibus arcu, tristique suspendisse fermentum integer.</p>
-
+				<hr class="hr hr-blurry" />
 			</div>
 
 			<!-- RIGHT COLUMN: BIG IMAGE -->
@@ -93,15 +95,53 @@
 			<p class="roboto-slab">Lorem ipsum dolor sit amet consectetur adipiscing, elit dictumst orci class in nibh eu, donec praesent himenaeos bibendum ante. Potenti cras senectus urna felis primis ornare lacus vel, eleifend sed molestie parturient magnis nostra magna, suscipit penatibus aptent turpis aliquet mus at. Tellus nec scelerisque taciti ac sapien litora nisi, congue consequat est ridiculus eget venenatis a, iaculis viverra fames sem mauris elementum, egestas euismod lobortis quisque gravida hac. Semper cubilia odio massa neque faucibus arcu, tristique suspendisse fermentum integer.</p>
 			</div>
 		</div>
+		
+		<div class="row">
+			<div class="col-md-5">
+				<h4 class="bbh-sans mt-7">Suggestions for us</h4>
+				<form name="SugForm" onsubmit="return validForm()" onreset="hideErrors()">
+					<label for="names" class="roboto-slab">First Name:</label><br>
+					<input type="text" id="names" name="Name" placeholder="Enter your first name" /><br>
+					<span id="names_error" class="error_msg"></span>
+					<br>
+					
+					<label for="surname"class="roboto-slab">Surname:</label><br>
+					<input type="text" id="surname" name="Surname" placeholder="Enter your Surname" /><br>
+					<span id="surname_error" class="error_msg"></span>
+					<br>
+					
+					<label for="email" class="roboto-slab">Email:</label><br>
+					<input type="text" id="email" name="Email" placeholder="John@doe.com" /><br>
+					<span id="email_error" class="error_msg"></span>
+					<br>
+					
+					<label for="suggest" class="roboto-slab">Give us your suggestions:</label><br>
+					<textarea id="suggest" name="suggest"></textarea><br>
+					<span id="sug_error" class="error_msg"></span>
+					<br>
+					
+					<!-- @refference : button colours -> https://getbootstrap.com/docs/4.0/components/buttons/ -->
+					<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+					<button type="reset" class="btn btn-danger btn-lg">Reset</button>
+					<br>
+					
+				</form>
+			</div>
 			
+			<div class="col-md-7">
+				<img src = "style\images\tbowaterhands.jpg" class="img-fluid w-100 news-image">
+			</div>
+		</div>
 	</div>
 
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    
+	
+	<!-- Form validation script -->
+    <script src="scripts/tbo_suggestions.js"></script>
     <!-- footer will be inserted here from scripts/footer.js -->
-		<script src="scripts/footer.js"></script>
+	<script src="scripts/footer.js"></script>
 </body>
 </html>
